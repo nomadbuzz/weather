@@ -6,11 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .search-bar{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 .search-bar input{
     height: 50px;
@@ -21,6 +22,7 @@
     color:#626262;
     background-color: #ebfffc;
     font-size: 18px;
+  
 }
 .search-bar img{
     width: 50px;
@@ -48,13 +50,14 @@
     margin-top: 40px;
     color:#fff;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .weather-data .col{
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 8px;
     font-size: 22px;
 }
 .weather-data .col span{
@@ -64,4 +67,14 @@
 .weather-data .col img{
     width: 26px;
     margin-top:10px;
+}
+
+@media only screen and (max-width: 600px){
+    .weather{
+        width: 96%;
+        padding: 40px 20px;
+    }
+    .search-bar input{
+        max-width: 120px;
+    }
 }

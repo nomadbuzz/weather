@@ -12,3 +12,10 @@
   display: grid;
   background-color: #e2d4ff;
 }
+
+@media only screen and (max-width: 600px){
+  .app{
+    width: 100%;
+  
+  }
+}
